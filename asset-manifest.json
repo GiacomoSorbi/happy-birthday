@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/happy-birthday/static/css/main.53ae592e.chunk.css",
+    "main.js": "/happy-birthday/static/js/main.b74ab38e.chunk.js",
+    "main.js.map": "/happy-birthday/static/js/main.b74ab38e.chunk.js.map",
+    "runtime~main.js": "/happy-birthday/static/js/runtime~main.b1b52b95.js",
+    "runtime~main.js.map": "/happy-birthday/static/js/runtime~main.b1b52b95.js.map",
+    "static/js/2.61716f1a.chunk.js": "/happy-birthday/static/js/2.61716f1a.chunk.js",
+    "static/js/2.61716f1a.chunk.js.map": "/happy-birthday/static/js/2.61716f1a.chunk.js.map",
+    "index.html": "/happy-birthday/index.html",
+    "precache-manifest.3298cbaaa79dcbbb5fc56a225f7c3a63.js": "/happy-birthday/precache-manifest.3298cbaaa79dcbbb5fc56a225f7c3a63.js",
+    "service-worker.js": "/happy-birthday/service-worker.js",
+    "static/css/main.53ae592e.chunk.css.map": "/happy-birthday/static/css/main.53ae592e.chunk.css.map",
+    "static/media/firework0.mp3": "/happy-birthday/static/media/firework0.320014c1.mp3",
+    "static/media/firework1.mp3": "/happy-birthday/static/media/firework1.8c936340.mp3",
+    "static/media/firework2.mp3": "/happy-birthday/static/media/firework2.56e0141f.mp3",
+    "static/media/firework3.mp3": "/happy-birthday/static/media/firework3.1f8c7856.mp3"
+  }
+}
