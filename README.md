@@ -6,6 +6,19 @@ Project to go back on one of my very first projects, several years ago using AmO
 - `React Hooks` - including `useState`, `useEffect` and, for the very first time, `useRef`;
 - a bit of OOP for the fireworks and the like.
 
+## TODO
+
+- ~~base firework animation~~
+- ~~play audio on firework explosion~~
+- ~~display sparks on firework explosion~~
+- ~~collecting user data to display a message~~
+
+* save/load state;
+* button to change user;
+* optimisation of the firework routines;
+* more tests;
+* messages for age and time to the next birthday if date is not a birthday
+
 ## Available Scripts
 
 In the project directory, you can run:

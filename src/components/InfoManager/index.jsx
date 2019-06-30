@@ -8,19 +8,19 @@ const NameText = props => (
       🎂
     </span>
     Welcome-uh... What is your name Again?
-    <span role="img" aria-label="Birthday Cake">
-      🎂
+    <span role="img" aria-label="Birthday Shortcake">
+      🍰
     </span>
   </div>
 );
 
 const BirthDateText = props => (
   <div className="info-collector-text">
-    <span role="img" aria-label="Birthday Cake">
-      📅
+    <span role="img" aria-label="Birthday Gift">
+      🎁
     </span>
     Brilliant, {props.name}! And when were you born?
-    <span role="img" aria-label="Birthday Cake">
+    <span role="img" aria-label="Birthday Date">
       📅
     </span>
   </div>
