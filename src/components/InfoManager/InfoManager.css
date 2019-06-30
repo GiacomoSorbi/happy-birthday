@@ -1,0 +1,8 @@
+.info-collector-text {
+  font-size: calc(20px + 2vmin);
+  color: white;
+}
+
+.info-collector-text span {
+  margin: 2vmin;
+}

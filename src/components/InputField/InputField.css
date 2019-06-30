@@ -1,0 +1,20 @@
+.input-form input {
+  outline: none;
+  font-size: calc(20px + 2vmin);
+  font-weight: bolder;
+  padding: 1vmin;
+  background-color: darkblue;
+  color: white;
+  transition: background-color 0.3s linear, color 0.3s linear;
+  border-radius: 2vmin;
+  border: 1vmin white solid;
+}
+
+.input-field {
+}
+
+.submit-btn:hover {
+  transition: background-color 0.1s linear, color 0.1s linear;
+  background-color: white;
+  color: darkblue;
+}
