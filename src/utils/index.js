@@ -19,7 +19,9 @@ export const booms = [
   new Audio(audio3)
 ];
 
-export const boom = () => booms[randint(0, booms.length - 1)].play();
+export const boom = () => {
+  booms[randint(0, booms.length - 1)].play();
+};
 
 let fireworks = [];
 
@@ -84,25 +86,30 @@ export const fireworksTick = ctx => {
       true
     );
     fireworks.push(firework);
-    console.log(fireworks);
   }
   fireworks = fireworks.filter(firework => firework.ttl);
   ctx.clearRect(0, 0, width, height);
   fireworks.forEach(firework => {
-    ctx.lineWidth = firework.radius;
+    let radius = firework.isBase
+      ? firework.radius
+      : Math.min(firework.radius, firework.ttl / 2);
+    ctx.lineWidth = radius;
     ctx.strokeStyle = firework.colour;
     ctx.fillStyle = firework.colour;
     ctx.beginPath();
-    ctx.arc(firework.x, firework.y, firework.radius / 2, 0, 2 * Math.PI);
+    ctx.arc(firework.x, firework.y, radius / 2, 0, 2 * Math.PI);
     ctx.fill();
-    ctx.globalAlpha = 0.5;
+    ctx.globalAlpha = 0.6;
     ctx.stroke();
-    firework.update({ ax: 0, ay: height / 6000 });
-    ctx.lineWidth = firework.radius;
+    firework.update({ ax: 0, ay: height / 5000 });
+    radius = firework.isBase
+      ? firework.radius
+      : Math.min(firework.radius, firework.ttl / 2);
+    ctx.lineWidth = radius;
     ctx.strokeStyle = firework.colour;
     ctx.fillStyle = firework.colour;
     ctx.beginPath();
-    ctx.arc(firework.x, firework.y, firework.radius / 2, 0, 2 * Math.PI);
+    ctx.arc(firework.x, firework.y, radius / 2, 0, 2 * Math.PI);
     ctx.fill();
     ctx.globalAlpha = 1;
     ctx.stroke();

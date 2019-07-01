@@ -13,10 +13,12 @@ Project to go back on one of my very first projects, several years ago using AmO
 - ~~display sparks on firework explosion~~
 - ~~collecting user data to display a message~~
 
-* save/load state;
+* save/load state functionality;
 * button to change user;
 * optimisation of the firework routines;
 * more tests;
+* split the utils in to separate files;
+* verify behaviour on actual mobiles;
 * messages for age and time to the next birthday if date is not a birthday
 
 ## Available Scripts
