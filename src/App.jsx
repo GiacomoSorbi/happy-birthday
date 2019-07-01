@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useState } from 'react';
 import './App.css';
 import InfoManager from './components/InfoManager';
-import { fireworksTick } from './utils';
+import { fireworksTick, loadState, saveState } from './utils';
 import HappyBirthday from './components/HappyBirthday';
 
 const App = () => {
@@ -12,7 +12,12 @@ const App = () => {
   };
   useEffect(() => {
     //import loadstate
+    if (!userData.name && !userData.dateOfBirth) {
+      setUserData({ ...loadState() });
+    }
+    //trigger animation and save when you have both data
     if (userData.name && userData.dateOfBirth) {
+      saveState(JSON.stringify(userData));
       const ctx = canvas.current.getContext('2d');
       setInterval(() => fireworksTick(ctx), 16);
     }
